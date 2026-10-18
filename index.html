@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c12">
+  <meta name="description" content="Turn recordings into editable MIDI with MIDIcommittee, a free Windows desktop app for your NVIDIA GPU. Meet the 2.1 beta and check the setup requirements.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MIDIcommittee — your music, ready for its next life">
+  <meta property="og:description" content="A free Windows desktop app that turns recordings into editable MIDI on your own NVIDIA GPU. Version 2.1 beta.">
+  <meta property="og:url" content="https://midicommittee.com/">
+  <meta property="og:image" content="https://midicommittee.com/assets/studio-demo.jpg">
+  <meta property="og:image:alt" content="MIDIcommittee 2.1 studio showing generated demonstration notes and a processing queue">
+  <link rel="canonical" href="https://midicommittee.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <title>MIDIcommittee — Your music. Ready for its next life.</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="brand" href="#" aria-label="MIDIcommittee home"><span class="brand-mark" aria-hidden="true"></span>MIDIcommittee</a>
+    <nav aria-label="Main navigation">
+      <a href="#studio">The studio</a>
+      <a href="#workflow">How it works</a>
+      <a href="#help">Help</a>
+      <a class="nav-download" href="#download">Get the beta <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Audio → editable MIDI <span class="eyebrow-divider">/</span> 2.1 beta</p>
+        <h1 id="hero-title">Your music.<br>Ready for its<br><span>next life.</span></h1>
+        <p class="hero-description">Turn a recording into notes you can work with. MIDIcommittee is a free Windows desktop app that listens on your own NVIDIA GPU, then brings editable MIDI back into your music-making.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">Get the Windows beta <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#studio">Take a look inside <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="hero-requirements">Windows 11 x64 <span>·</span> NVIDIA / CUDA required <span>·</span> Separate model terms</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-label"><span>01 / A NEW ARRANGEMENT</span><span>∞</span></div>
+        <div class="note-field">
+          <div class="note-lane lane-cyan"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="note-lane lane-coral"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="note-lane lane-gold"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="note-lane lane-lilac"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="playhead"></div>
+          <div class="listening-wave"></div>
+        </div>
+        <div class="art-caption"><span>Familiar ideas.<br>New possibilities.</span><span class="art-signal">● &nbsp; KEEP MAKING</span></div>
+      </div>
+    </section>
+
+    <section id="studio" class="studio-section shell" aria-labelledby="studio-title">
+      <div class="section-intro">
+        <div><p class="eyebrow">Room to keep working</p><h2 id="studio-title">From recording to arrangement.</h2></div>
+        <p>Queue a few songs, guide the instruments if you like, and follow the notes as the listening passes complete.</p>
+      </div>
+      <figure class="studio-figure">
+        <div class="window-bar" aria-hidden="true"><span class="window-lights"><i></i><i></i><i></i></span><span>MIDIcommittee / the desktop studio</span><span>2.1</span></div>
+        <img src="assets/studio-demo.jpg" alt="MIDIcommittee studio with coloured MIDI instrument lanes, a song queue and listening progress. This image uses generated demonstration data." width="1265" height="712" fetchpriority="high">
+        <figcaption><span class="demo-label">Generated demo</span><span>Actual app interface with generated demonstration notes. This image is not evidence of transcription quality.</span></figcaption>
+      </figure>
+      <div class="studio-footnote"><span class="fine-marker" aria-hidden="true">↳</span><p>These are notes to shape, not a finished performance. Expect to check timing, labels and the occasional wrong or missing note in your DAW. The app’s Play button auditions your original recording; it does not synthesise the MIDI.</p></div>
+    </section>
+
+    <section id="workflow" class="workflow-section shell section-space" aria-labelledby="workflow-title">
+      <div class="section-intro"><div><p class="eyebrow">A small detour. A fresh starting point.</p><h2 id="workflow-title">Back to making music.</h2></div><p>Keep it simple, or give the committee a little direction. No AI-provider key is needed.</p></div>
+      <ol class="workflow-list">
+        <li><span class="step-number">01</span><h3>Bring a recording.</h3><p>Add a song to the desktop queue. Name it, line up a batch, and leave the listening depth at Balanced to get started.</p><span class="step-detail">WAV · MP3 · FLAC · AIFF · OGG · M4A</span></li>
+        <li><span class="step-number">02</span><h3>Let the parts emerge.</h3><p>The local model listens in passes. Add instrument hints, a known tempo or a MIDI guide when you have something useful to tell it.</p><span class="step-detail">Optional hints · Stop and resume</span></li>
+        <li><span class="step-number">03</span><h3>Make it yours again.</h3><p>Export combined MIDI, separate instrument files or a REAPER project with reference audio. Choose your sounds and start editing.</p><span class="step-detail">Editable notes · Your DAW · Your next idea</span></li>
+      </ol>
+    </section>
+
+    <section class="local-section" aria-labelledby="local-title">
+      <div class="shell local-layout">
+        <div class="local-heading"><p class="eyebrow">Your desktop does the listening</p><h2 id="local-title">A local studio.<br>A little breathing room.</h2><p>Audio transcription runs on your PC. This website does not receive songs or run conversions.</p></div>
+        <dl class="local-facts">
+          <div><dt><span aria-hidden="true">01</span> Local by default</dt><dd>MuScriptor processes the recording on your NVIDIA GPU. Installation and model downloads need internet access.</dd></div>
+          <div><dt><span aria-hidden="true">02</span> Optional AI planning</dt><dd>If enabled, your chosen API provider receives compact note statistics and the hints you enter, not your audio or original filenames. Provider charges may apply. Local rules work without it.</dd></div>
+          <div><dt><span aria-hidden="true">03</span> An optional phone remote</dt><dd>Use Tailscale to reach your own running desktop privately. The phone controls the session; the PC still runs the model. Remote access is off at each app start.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="download" class="download-section shell section-space" aria-labelledby="download-title">
+      <div class="download-heading"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A small Windows beta</p><h2 id="download-title">First, meet your PC.</h2><p>MIDIcommittee is free to download. This CUDA build needs a compatible Windows desktop and a little first-run preparation.</p></div>
+      <div class="download-layout">
+        <div class="requirements-panel">
+          <h3>What you’ll need</h3>
+          <ul class="requirements-list">
+            <li><span class="requirement-icon" aria-hidden="true">↳</span><div><strong>Windows 11, 64-bit</strong><p>With Microsoft Edge WebView2 Runtime.</p></div></li>
+            <li><span class="requirement-icon" aria-hidden="true">↳</span><div><strong>An NVIDIA GPU and suitable drivers</strong><p>This build uses CUDA. Other GPUs, CPU-only use, macOS and Linux are not supported by this beta.</p></div></li>
+            <li><span class="requirement-icon" aria-hidden="true">↳</span><div><strong>Time, internet and disk space for setup</strong><p>The first runtime and model downloads are substantial, with several gigabytes of dependencies. Python 3.11 is required; setup offers it separately if missing.</p></div></li>
+            <li><span class="requirement-icon" aria-hidden="true">↳</span><div><strong>Your own Hugging Face model access</strong><p>Review and accept the <a href="https://huggingface.co/MuScriptor/muscriptor-large" rel="noopener noreferrer">official MuScriptor conditions</a> in your own account. Model weights are downloaded separately and are not included in the installer.</p></div></li>
+          </ul>
+        </div>
+        <div class="download-panel">
+          <div class="release-line"><span>MIDIcommittee</span><span class="version-label">2.1.0 beta</span></div>
+          <h3>Something worth<br>working with.</h3>
+          <p class="download-summary">A desktop home for your recordings’ next chapter.</p>
+          <div class="model-notice"><strong>Read the model terms before use.</strong><p>The app’s own code is MIT-licensed. MuScriptor weights use <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="noopener noreferrer">CC BY-NC 4.0</a> and additional model conditions. The app licence does not grant commercial rights to the model. Only transcribe recordings you are entitled to use.</p></div>
+          <a class="button button-primary download-button" href="downloads/MIDIcommittee-2.1.0-Setup.exe" download data-release-asset>Download Windows beta <span aria-hidden="true">↓</span></a>
+          <div class="download-meta"><span>Windows x64 · unsigned installer</span><a href="downloads/MIDIcommittee-2.1.0-Setup.exe.sha256" download data-release-asset>SHA-256 checksum <span aria-hidden="true">↗</span></a></div>
+          <p class="beta-limit">Early beta: manually checked on Windows 11 with an RTX 4070. A complete first installation on a second clean PC is still pending. Compatibility with other GPUs is not yet verified; a minimum VRAM specification has not been established.</p>
+          <p class="unsigned-note">This installer is unsigned and has no verified publisher identity. Windows may show a warning. Check the download’s origin and checksum before deciding to run it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quickstart" class="quickstart-section shell" aria-labelledby="quickstart-title">
+      <div class="quickstart-heading"><p class="eyebrow">Your first session</p><h2 id="quickstart-title">A little setup.<br>Then, a song.</h2><a class="text-link" href="#help">Setup help <span aria-hidden="true">↓</span></a></div>
+      <ol class="quickstart-list">
+        <li><span>01</span><div><h3>Install, open, prepare.</h3><p>Run the installer and open MIDIcommittee. Choose <strong>Prepare local runtime</strong> and follow setup. If interrupted, <strong>Resume setup</strong> reuses completed work.</p></div></li>
+        <li><span>02</span><div><h3>Get your model access.</h3><p>Read the <a href="https://huggingface.co/MuScriptor/muscriptor-large" rel="noopener noreferrer">official model conditions</a>, obtain access through your own Hugging Face account, then use the <a href="https://huggingface.co/docs/huggingface_hub/guides/cli#hf-auth-login" rel="noopener noreferrer">official CLI sign-in guide</a>. Setup does not accept terms or sign in for you.</p></div></li>
+        <li><span>03</span><div><h3>Skip the optional bits. Start listening.</h3><p>You can skip AI planning. Choose <strong>Start MIDIcommittee</strong>, add a recording to the right-hand drawer and choose <strong>Queue song</strong>. The first authorised use downloads the model.</p></div></li>
+        <li><span>04</span><div><h3>Take the notes into your DAW.</h3><p>Select a ready session, open the arrow beside <strong>Download</strong> and choose your formats. Extract REAPER packages before opening them, and assign instruments to hear your MIDI.</p></div></li>
+      </ol>
+    </section>
+
+    <section id="help" class="help-section shell section-space" aria-labelledby="help-title">
+      <div class="section-intro"><div><p class="eyebrow">Keep the session moving</p><h2 id="help-title">A few useful answers.</h2></div><p>The beta is still finding its feet. These are the things worth knowing before your first listen.</p></div>
+      <div class="faq-list">
+        <details><summary>Does it separate stems or recreate the original sounds?</summary><div class="faq-answer"><p>MIDIcommittee transcribes notes. It does not export isolated audio stems or recreate the recording’s instruments, production or vocal sound. Open the MIDI in your DAW and choose instruments to hear it.</p><p>The studio’s Play button auditions the original full mix. Lane Hide and Solo controls change the MIDI drawing, not the audio.</p></div></details>
+        <details><summary>How long will a song take? Which listening depth should I use?</summary><div class="faq-answer"><p>It depends on your GPU, the recording and the number of listening passes. There is no promised real-time speed. Progress reflects stages and sections; it is not an exact time remaining.</p><p>Start with <strong>Balanced</strong>. <strong>Quick draft</strong> gives an initial sketch; <strong>Extra detail · Thorough</strong> adds listening when parts seem missing. More passes can also introduce wrong or duplicate notes.</p><p>Keep <strong>Settings → Inference performance → Strict · float32</strong> for normal use. Experimental modes can change or miss notes.</p></div></details>
+        <details><summary>First setup is taking a while, or model access failed.</summary><div class="faq-answer"><p>Runtime/CUDA dependencies and model weights are separate downloads. Open <strong>Setup details and logs</strong> to see progress. If setup was interrupted, use <strong>Resume setup</strong>; a reboot is normally unnecessary.</p><p>For an access error, confirm that your own Hugging Face account has access to the <a href="https://huggingface.co/MuScriptor/muscriptor-large" rel="noopener noreferrer">official model</a>, then sign in with its official CLI. A Hugging Face token is for model downloads. It is different from an optional AI-provider key; do not put it in planner settings or song hints.</p><p>For WebView2 installation information, use <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" rel="noopener noreferrer">Microsoft’s official page</a>.</p></div></details>
+        <details><summary>Do I need an API subscription or AI-provider key?</summary><div class="faq-answer"><p>No. Local transcription and local planning rules work without one. The optional planner can use Anthropic, OpenAI, Gemini, OpenRouter or a compatible endpoint. Choose a model available to your own account; the provider may charge for requests.</p><p>If enabled, planning sends note statistics and your entered hints to that provider, not audio or original filenames. Keep private information out of hints. Saving settings makes no connection-test request; the separate test button sends a small request and may incur a charge. Keys are encrypted for the current Windows user with DPAPI.</p></div></details>
+        <details><summary>Can I stop, come back later, or tidy up a session?</summary><div class="faq-answer"><p><strong>Stop</strong> keeps completed passes. <strong>Resume</strong> continues from those checkpoints. Completed results persist when you reopen the app; interrupted work may need Resume.</p><p>Download anything you want to keep before using <strong>Clean up</strong>. Review its confirmation: removing a session deletes that session’s copied audio and generated files, and stops selected active work. It leaves your original recordings and already-saved downloads alone. Some diagnostic records and logs are retained.</p><p>Sessions and settings live in your Windows user’s MIDIcommittee app-data folder. <strong>Setup details and logs</strong> identifies the active profile; use the same profile after upgrading.</p></div></details>
+        <details><summary>What can I export? Why is Download greyed out?</summary><div class="faq-answer"><p>Select a session with available outputs first. A stopped or failed session may not have a usable export yet. Choose combined MIDI, one MIDI per instrument, bar-aligned MIDI, a REAPER project, or a REAPER package with reference audio. Reports, source audio and diagnostic passes are also available.</p><p>Multiple outputs are grouped by song in a ZIP. Extract a REAPER package before opening it. Diagnostic passes can overlap or duplicate notes; the normal combined MIDI is the usual place to start.</p><p>If a transfer was interrupted, request a fresh download. Transfer links are single-use; completed session outputs remain available.</p></div></details>
+        <details><summary>Can I use a phone, basic laptop or VM?</summary><div class="faq-answer"><p>A phone or basic laptop can act as a private browser remote for your own running NVIDIA-equipped PC. Install Tailscale on both devices, join the same Tailnet, then enable <strong>Settings → Use your phone</strong> on the processing PC and pair using the one-use code.</p><p>The NVIDIA-equipped PC performs transcription. Remote access is off at each app start, and disabling it revokes pairings. Keep your Tailnet and paired devices trusted: a paired device can manage sessions and download results. This website never connects to your desktop.</p><p>A virtual machine can help test a fresh Windows installation, but it does not add a physical GPU. GPU access inside a VM needs its own setup and has not been validated for this beta. On a PC without NVIDIA graphics, skip the large CUDA runtime/model download.</p><p><a href="https://tailscale.com/" rel="noopener noreferrer">About Tailscale <span aria-hidden="true">↗</span></a></p></div></details>
+        <details><summary>May I use it for commercially released music?</summary><div class="faq-answer"><p>The app code’s MIT licence and the model’s permitted uses are separate. The MuScriptor weights have a non-commercial restriction and additional conditions. Owning the input music does not, by itself, resolve every model-use question.</p><p>Commercial-use clarification is still pending. This website does not grant commercial permission. Read the <a href="https://huggingface.co/MuScriptor/muscriptor-large" rel="noopener noreferrer">official model terms</a> and obtain any permission your intended use requires from the rights holders.</p></div></details>
+        <details><summary>Where is the source code? How can I help?</summary><div class="faq-answer"><p>The application’s own code is MIT-licensed. A public source release is planned; the repository is not public yet.</p><p>For now, the most useful contributions are installation feedback from compatible Windows PCs, clear bug reports, accessibility observations and notes about confusing steps. Please ask before sending audio. A short description and redacted error are a better first report.</p><p><a href="mailto:bennypixel5000@gmail.com?subject=MIDIcommittee%202.1%20beta%20feedback">Send beta feedback <span aria-hidden="true">↗</span></a></p></div></details>
+        <details><summary>How do I report a problem without sharing private files?</summary><div class="faq-answer"><p>Email the version, your Windows version and GPU, what you tried, and the stage/error shown. Review logs first. Leave out API keys, Hugging Face tokens, personal file paths and private audio.</p><div class="report-template"><pre id="report-template" tabindex="0">MIDIcommittee version: 2.1.0 beta
+Windows version:
+NVIDIA GPU and driver:
+What I tried:
+What I expected:
+What happened / stage / redacted error:
+Can I repeat it?:
+Optional: AI planner enabled? (no keys)</pre><div class="report-actions"><button class="small-button" type="button" id="copy-report">Copy report template</button><span id="copy-status" role="status" aria-live="polite"></span></div></div><p><a href="mailto:bennypixel5000@gmail.com?subject=MIDIcommittee%202.1%20beta%20feedback">Email beta feedback <span aria-hidden="true">↗</span></a> — opens your email app; there is no contact form.</p></div></details>
+      </div>
+    </section>
+
+    <section id="about" class="about-section shell" aria-labelledby="about-title">
+      <div class="about-copy"><p class="eyebrow">Made by bennypixel</p><h2 id="about-title">A useful tool.<br>A shared curiosity.</h2><p>MIDIcommittee is a musician’s project: a way to spend less time rebuilding a recording and more time finding out what it could become.</p><p>The contribution is the desktop workflow around remarkable work by researchers and open-source contributors. Their work deserves the credit.</p><a class="text-link" href="mailto:bennypixel5000@gmail.com?subject=MIDIcommittee%202.1%20beta%20feedback">Help shape the beta <span aria-hidden="true">↗</span></a></div>
+      <div id="licences" class="credits"><h3>Built on good work.</h3><dl><div><dt><a href="https://github.com/muscriptor/muscriptor" rel="noopener noreferrer">MuScriptor <span aria-hidden="true">↗</span></a></dt><dd>Audio-to-MIDI transcription by Kyutai × Mirelo. <a href="https://github.com/muscriptor/muscriptor/blob/main/LICENSE" rel="noopener noreferrer">MIT code</a>; <a href="https://huggingface.co/MuScriptor/muscriptor-large" rel="noopener noreferrer">CC BY-NC 4.0 weights and model conditions</a>.</dd></div><div><dt><a href="https://github.com/CPJKU/beat_this" rel="noopener noreferrer">Beat This! <span aria-hidden="true">↗</span></a></dt><dd>Beat and downbeat tracking by CPJKU. <a href="https://github.com/CPJKU/beat_this#license" rel="noopener noreferrer">MIT code and published weights</a>.</dd></div><div><dt><a href="https://github.com/spotify/basic-pitch" rel="noopener noreferrer">Basic Pitch <span aria-hidden="true">↗</span></a></dt><dd>Spotify’s audio-to-MIDI project. <a href="https://github.com/spotify/basic-pitch/blob/main/LICENSE" rel="noopener noreferrer">Apache-2.0 licence</a> and <a href="https://github.com/spotify/basic-pitch/blob/main/NOTICE" rel="noopener noreferrer">NOTICE</a>.</dd></div><div><dt>Plus Jakarta Sans</dt><dd>Typeface by the Plus Jakarta Sans Project Authors. <a href="assets/fonts/OFL.txt">SIL Open Font License</a>.</dd></div></dl><p class="credits-note"><a href="licences/application-MIT.txt">MIDIcommittee application code: MIT</a>. Dependencies retain their own licences. These independent projects do not endorse MIDIcommittee.</p></div>
+    </section>
+
+    <section id="privacy" class="privacy-section shell" aria-labelledby="privacy-title"><h2 id="privacy-title">A note on privacy.</h2><div><p>This is a static download and information site. It has no accounts, analytics scripts, advertising, contact form or song-upload service. Its fonts and images are served from this site. The hosting service may process ordinary request data to deliver the pages and downloads.</p><p>External links take you to their respective services. Email feedback is sent through your email provider. The desktop app’s local processing, optional API planning and optional Tailscale access are described <a href="#local-title">above</a>.</p></div></section>
+  </main>
+
+  <footer class="site-footer shell"><a class="brand" href="#" aria-label="MIDIcommittee back to top"><span class="brand-mark" aria-hidden="true"></span>MIDIcommittee</a><p>Keep making.</p><nav aria-label="Footer navigation"><a href="#download">Download</a><a href="#licences">Credits &amp; licences</a><a href="#privacy">Privacy</a><a href="mailto:bennypixel5000@gmail.com?subject=MIDIcommittee%202.1%20beta%20feedback">Feedback</a></nav><span class="copyright">© 2026 bennypixel</span></footer>
+</body>
+</html>
